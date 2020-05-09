@@ -1,5 +1,5 @@
-# This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
+# This file is auto-generated from the current state of the database. Instead
 # incrementally modify your database, and then regenerate this schema definition.
 #
 # This file is the source Rails uses to define your schema when running `rails
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_05_04_015812) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "slug"
-    t.integer "status"
+    t.integer "status", default: 0
     t.index ["slug"], name: "index_blogs_on_slug", unique: true
   end
 
