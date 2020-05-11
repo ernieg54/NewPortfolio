@@ -25,7 +25,6 @@ class BlogsController < ApplicationController
   # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
-
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Your post is now live.' }
@@ -58,7 +57,7 @@ class BlogsController < ApplicationController
 
   def toggle_status
 
-    if @blog.draft? 
+    if @blog.draft?
         @blog.published!
     elsif @blog.published?
         @blog.draft!
