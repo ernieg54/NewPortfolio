@@ -1,7 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout "blog"
-  
+
   # GET /blogs
   # GET /blogs.json
   def index
@@ -29,6 +29,8 @@ class BlogsController < ApplicationController
   # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
+    @blog.topic = Topic.last
+    
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Your post is now live.' }
