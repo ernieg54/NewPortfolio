@@ -5,7 +5,12 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+#    byebug
+#    binding.pry
+    @blogs = Blog.special_blogs
+#    binding.pry
+#    @blogs = Blog.limit_blogs
+#    binding.pry
     @page_title = "My Portfolio blog"
   end
 
@@ -30,7 +35,7 @@ class BlogsController < ApplicationController
   def create
     @blog = Blog.new(blog_params)
     @blog.topic = Topic.last
-    
+
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Your post is now live.' }
