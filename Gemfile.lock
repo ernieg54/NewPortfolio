@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/ernieg54/ernie_view_tool
+  revision: bce6350ef4055b3c202250ff1683ec0a6875328d
+  specs:
+    ernie_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -215,6 +221,7 @@ DEPENDENCIES
   bootstrap (~> 4.5.0)
   byebug
   devise (~> 4.7, >= 4.7.1)
+  ernie_view_tool!
   friendly_id (~> 5.2.4)
   jbuilder (~> 2.7)
   jquery-rails
