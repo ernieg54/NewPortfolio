@@ -50,4 +50,4 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 
 gem 'bootstrap', '~> 4.5.0'
 gem 'jquery-rails'
-gem 'ernie_view_tool', git: 'https://github.com/ernieg54/ernie_view_tool'
+gem 'ernie_view_tool', '~> 0.1.0'
