@@ -10,7 +10,7 @@ class BlogsController < ApplicationController
   def index
 #    byebug
 #    binding.pry
-    @blogs = Blog.special_blogs
+    @blogs = Blog.page(params[:page]).per(5)
 #    binding.pry
 #    @blogs = Blog.limit_blogs
 #    binding.pry
