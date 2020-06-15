@@ -4,6 +4,7 @@
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+@import "jquery-ui";
 
 .jumbotron {
   padding-top: 3rem;
@@ -44,4 +45,4 @@ footer p {
  */
 .portfolio_form {
   padding: 20px;
-} 
+}
