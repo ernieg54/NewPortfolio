@@ -6,7 +6,7 @@ class PortfoliosController < ApplicationController
          site_admin: :all
 
   def index
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.by_position
   end
 
 # following is for demonstration purposes - not best practice
