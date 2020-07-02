@@ -14,6 +14,12 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :portfolios do
+    member do
+      patch :move
+    end
+  end
+
   root to: 'pages#home'
 
 end

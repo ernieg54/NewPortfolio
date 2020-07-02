@@ -47,11 +47,13 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4'
 gem 'devise', '~> 4.7', '>= 4.7.1'
-
-gem 'bootstrap', '~> 4.5.0'
-gem 'jquery-rails'
 gem 'ernie_view_tool', '~> 0.1.0'
+gem 'bootstrap', '~> 4.5.0'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'kaminari'
+gem 'jquery-rails', '~> 4.4'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'sortablejs-rails', '~> 1.10', '>= 1.10.2'
+
+gem "acts_as_list", "~> 1.0"
